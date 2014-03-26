@@ -110,3 +110,6 @@ outputs:
 
   server_ip:
     value: { get_attr: [memcached_server, accessIPv4] }
+
+  memcached_port:
+    value: { get_param: memcached_port }
