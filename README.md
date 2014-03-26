@@ -29,7 +29,7 @@ Here is an example of how to deploy this template using the
 ```
 heat --os-username <OS-USERNAME> --os-password <OS-PASSWORD> --os-tenant-id \
   <TENANT-ID> --os-auth-url https://identity.api.rackspacecloud.com/v2.0/ \
-  stack-create memcached-Stack -f memcached.yaml \
+  stack-create memcached-stack -f memcached.yaml \
   -P server_hostname=memcache -P ssh_keypair_name=memcache-example
 ```
 
